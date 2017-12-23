@@ -1,0 +1,21 @@
+[
+{
+  "modid" : "Morph",
+  "name" : "Morph",
+  "version" : "0.9.2",
+  "url" : "http://ichun.us/mods/morph/",
+  "credits" : "",
+  "authors": [
+    "iChun"
+  ],
+  "description": "This mod allows you to kill other entities and take their form.",
+  "logoFile" : "",
+  "updateUrl" : "",
+  "parent" : "",
+  "screenshots": [
+  ],
+  "dependancies": [
+    "Forge", "iChunUtil"
+  ]
+}
+]
