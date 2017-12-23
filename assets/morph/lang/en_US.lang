@@ -97,6 +97,7 @@ morph.config.prop.renderCrosshairInRadialMenu.comment=As per request, render the
 morph.command.demorph=/morph demorph [player] [force demorph even if offline (true/false)] - Makes a player demorph
 morph.command.clear=/morph clear [player] - Clears a player's morphs
 morph.command.morphtarget=/morph morphtarget [player] - Tries to make the player morph the mob they're looking at
+morph.command.morph=/morph morph [player] <entity name> - Tries to make the player morph into the given entity.
 morph.command.addtolist=/morph whitelist <player> - Adds a player to the morph skill whitelist, turning it on
 morph.command.removefromlist=/morph unwhitelist <player> - Removes a player from the morph skill whitelist
 
@@ -107,7 +108,9 @@ morph.command.cannotReadMorphData=Could not read morph data from %s
 morph.command.notOnline=%s is not online!
 morph.command.clearingMorphs=Clearing %s's morphs
 morph.command.failToClear=Failed to clear %s's morphs
+morph.command.morphError=Error creating mob morph for %s.
 morph.command.notLookingAtMorphable=%s is not looking at a morphable mob.
+morph.command.forcingMorphViaCommand=Forcing %1$s to morph into %2$s.
 morph.command.forcingMorphTarget=Forcing %s to morph into it's target.
 morph.command.cannotFindPlayer=Cannot find player: %s
 morph.command.addingToBlackWhite=Adding %s to the Black/White list for the Morph Skill.

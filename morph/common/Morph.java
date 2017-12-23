@@ -18,10 +18,10 @@ import ichun.common.core.updateChecker.*;
 import cpw.mods.fml.common.event.*;
 import org.apache.logging.log4j.*;
 
-@Mod(modid = "Morph", name = "Morph", version = "0.9.2", dependencies = "required-after:iChunUtil@[4.0.0,)", acceptableRemoteVersions = "[0.9.0,0.10.0)")
+@Mod(modid = "Morph", name = "Morph", version = "0.9.3", dependencies = "required-after:iChunUtil@[4.0.0,)", acceptableRemoteVersions = "[0.9.0,0.10.0)")
 public class Morph implements IConfigUser
 {
-    public static final String version = "0.9.2";
+    public static final String version = "0.9.3";
     @Mod.Instance("Morph")
     public static Morph instance;
     @SidedProxy(clientSide = "morph.client.core.ClientProxy", serverSide = "morph.common.core.CommonProxy")
@@ -73,7 +73,7 @@ public class Morph implements IConfigUser
         Morph.config.setCurrentCategory("abilities", "morph.config.cat.abilities.name", "morph.config.cat.abilities.comment");
         Morph.config.createIntBoolProperty("abilities", "morph.config.prop.abilities.name", "morph.config.prop.abilities.comment", false, true, true);
         Morph.config.createStringProperty("customPatchLink", "morph.config.prop.customPatchLink.name", "morph.config.prop.customPatchLink.comment", false, false, "");
-        Morph.config.createIntProperty("hostileAbilityMode", "morph.config.prop.hostileAbilityMode.name", "morph.config.prop.hostileAbilityMode.comment", true, false, 0, 0, 4);
+        Morph.config.createIntProperty("hostileAbilityMode", "morph.config.prop.hostileAbilityMode.name", "morph.config.prop.hostileAbilityMode.comment", true, false, 0, 0, 5);
         Morph.config.createIntProperty("hostileAbilityDistanceCheck", "morph.config.prop.hostileAbilityDistanceCheck.name", "morph.config.prop.hostileAbilityDistanceCheck.comment", true, false, 6, 0, 128);
         Morph.config.createIntProperty("disableEarlyGameFlight", "morph.config.prop.disableEarlyGameFlight.name", "morph.config.prop.disableEarlyGameFlight.comment", true, false, 0, 0, 2);
         Morph.config.createIntBoolProperty("disableEarlyGameFlightMode", "morph.config.prop.disableEarlyGameFlightMode.name", "morph.config.prop.disableEarlyGameFlightMode.comment", true, false, false);
@@ -115,7 +115,7 @@ public class Morph implements IConfigUser
         final EventHandler eventHandler = new EventHandler();
         MinecraftForge.EVENT_BUS.register((Object)eventHandler);
         FMLCommonHandler.instance().bus().register((Object)eventHandler);
-        ModVersionChecker.register_iChunMod(new ModVersionInfo("Morph", "1.7.10", "0.9.2", false));
+        ModVersionChecker.register_iChunMod(new ModVersionInfo("Morph", "1.7.10", "0.9.3", false));
     }
     
     @Mod.EventHandler
@@ -194,7 +194,7 @@ public class Morph implements IConfigUser
     
     public static void console(final String s, final boolean warning) {
         final StringBuilder sb = new StringBuilder();
-        Morph.logger.log(warning ? Level.WARN : Level.INFO, sb.append("[").append("0.9.2").append("] ").append(s).toString());
+        Morph.logger.log(warning ? Level.WARN : Level.INFO, sb.append("[").append("0.9.3").append("] ").append(s).toString());
     }
     
     static {
